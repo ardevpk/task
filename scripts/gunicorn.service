@@ -6,7 +6,7 @@ After=network.target
 [Service]
 User=root
 Group=www-data
-WorkingDirectory=/var/lib/jenkins/workspace/task
+WorkingDirectory=/var/lib/jenkins/workspace/task/task
 ExecStart=/var/lib/jenkins/workspace/task/env/bin/gunicorn --workers 3 --log-level debug --error-logfile /var/lib/jenkins/workspace/task/error.log --bind unix:/run/gunicorn.sock core.wsgi:application
 
 [Install]
