@@ -16,8 +16,8 @@ if [ -d "logs" ]
 then
     echo "Log folder exists." 
 else
-    mkdir logs
-    touch logs/error.log logs/access.log
+    sudo mkdir logs
+    sudo touch logs/error.log logs/access.log
 fi
 
-sudo chmod -R 777 logs
+# sudo chmod -R 777 logs
